@@ -1,0 +1,67 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+https://github.com/ > signup
+https://git-scm.com/downloads
+
+Add To Chrome
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+
+//after installing Vs code add extension
+> eslint
+> gitlens
+> git History
+> vscode icons
+> tabnine
+
+Npm
+React = 3
+Mock API
+json-server
+Github
+Deployment
+-> MERN
+-> heroku
+-> Aws
+-> Docker
+-> Nginx
+React-JWT(Login Logout)-2
+React_hooks -1
+React-GraphQL-1
+HOC
+Basic React Native=1
+React-Redux =1
+React-Redux =1
+///////Walkthrough///////
+React-Saga -1
+React-with-typescript-1
+Testing Jest Enzime
+--------NOT Backend--------------
+API
+GraphQL
+Login/Logout
+
+
+/////////////////////////
+React
+> React is a frontend lib/framework
+which help to build single page application
+using the component base structure
+
+Npm(177828)
+> Node Package Manager
+# provide packages
+(node_modules)
+
+JSON
+> JavaScript Object Notation
+[
+    {
+        "id":1,
+        "name":"John"
+    },
+    {
+        "id":2,
+        "name":"Ankit"
+    }
+]
