@@ -49,10 +49,10 @@ React
 which help to build single page application
 using the component base structure
 
-Npm(177828)
+Npm()
 > Node Package Manager
 # provide packages
-(node_modules)
+(node_modules/packages/dependencies/)
 
 JSON
 > JavaScript Object Notation
@@ -67,9 +67,108 @@ JSON
     }
 ]
 
+//////////
+package.json
+//////////
+> First is the first file in the app
+> Entry point to the application
+> Contains cmd start, build, test
+> All the packages 
+
+/////////
+Step to create package.json
+/////////
+*NodeJs must be installed in system
+> go inside the folder using cmd/terminal (cd desktop/api/react/learnpackage)
+> npm init
+> Answer all questions
+> type "yes"
+
+
+//////////////////
+Step to install package
+//////////////////
+*NodeJs must be installed in system
+> go inside the folder using cmd/terminal (cd desktop/api/react/learnpackage)
+> npm i packagename   / npm install packagename
+(npm i react)
+
+> npm i react-router-dom@5.3.0
+
 
 //////////
-Installing packages
-package.json
-setup the react application
-First Component in React
+# package.json > main file and Contains all main dependencies
+# package-lock.json > conatines dependency tree
+(all the child dependencies)
+# .gitignore > help not to push files to github
+# readme.md > Detail Description
+# src > containe all the scripts(Js/logic)
+# public > all static(css/html)
+
+
+////uninstall package
+> npm uninstall packagenam
+
+/////////
+setup the generate react app
+////////
+#window
+>One Time Step<
+> open the cmd as administrator
+> npm i -g create-react-app
+> close cmd
+
+>Next Every Time You need to generate new app<
+> open cmd 
+> go inside the folder where you want application
+> create-react-app applicationName
+
+#mac/linux
+>One Time Step<
+> open the terminal
+> sudo npm i -g create-react-app
+> close terminal
+
+>Next Every Time You need to generate new app<
+> open terminal 
+> go inside the folder where you want application
+> create-react-app applicationName
+
+
+//////////////////
+> open cmd
+> go inside the folder where you want application
+> npx create-react-app applicationName
+
+//Step to run the react app//
+> open the cmd/terminals
+> go inside the folder
+> npm start 
+> http://localhost:3000
+
+
+///var let const
+
+////////////////////////////
+es5 > ecma Script 5
+function add(a,b){
+    return a+b
+}
+
+es6 > ecma Script 6
+const add = (a,b) => {return a+b}
+
+"react": this is the main package of app
+"react-dom": this will help to bind the content in html
+"react-scripts": this help to run the app
+
+
+function add(a,b){
+    var out = [a,b]
+    return out
+}
+
+add(1,2)
+[1,2]
+
+////////
