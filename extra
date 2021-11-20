@@ -172,3 +172,43 @@ add(1,2)
 [1,2]
 
 ////////
+functional
+> Dump components
+> Mainly use for display purpose 
+> we cannot maintain the state
+
+class
+> logical component
+> we can use for api calling, display as well as logic
+> we can maintain state
+
+
+hooks
+
+
+/////////////////////////
+props
+> props is use to transfer data from one component to another
+> we cannot update the value of props(immutable)
+> Props can only be used in nested components
+
+state
+> It act like a local variable
+> Every component can have its own state
+> Scope of one state is in that component only
+> we can update the value of state(mutable)
+> whenever state update component will re-render
+
+/// javascript
+map
+filter
+indexof
+Bootstrap> https://www.w3schools.com/bootstrap/default.asp
+
+var city = ["Delhi","Mumbai","Pune"];
+
+for(i=0;i<city.length;i++){
+    console.log(city[i])
+}
+
+city.map((data) => {console.log(data)})

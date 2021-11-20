@@ -1,0 +1,30 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './Header';
+import Footer from './Footer';
+
+const App = () => {
+    return(
+        <React.Fragment>
+            <Header/>
+            <h1>Hii From React</h1>
+            <h2>React App</h2>
+            <Footer/>
+        </React.Fragment>
+    )
+}
+
+ReactDOM.render(<App/>,document.getElementById('root'))
+
+/*
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+function Abc(){
+    return(
+        <h1>Hii From React</h1>
+    ) 
+}
+
+ReactDOM.render(<Abc/>,document.getElementById('root'))
+*/

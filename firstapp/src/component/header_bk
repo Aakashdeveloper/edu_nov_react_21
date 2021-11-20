@@ -1,0 +1,72 @@
+import React,{Fragment,Component} from 'react';
+
+class Header extends Component {
+    // first thing that get called
+    constructor(){
+        super()
+
+        this.state={
+            title:'React App',
+            keyword:'User Input Here'
+        }
+    }
+
+    handleChange = (event) => {
+        // console.log(event)
+        console.log(event.target.value)
+        this.setState({keyword:event.target.value})
+    }
+
+    render(){
+        console.log('render>>>')
+        console.log('render>>>',this.state)
+
+        const myStyle = {
+            header:{
+                backgroundColor:'tomato'
+            },
+            logo:{
+                color:'white',
+                textAlign:'center',
+                fontSize:'30px'
+            }
+        }
+       
+        return(
+            <Fragment>
+                <header style={myStyle.header}>
+                    <div style={myStyle.logo}>{this.state.title}</div>
+                    <center>
+                        <input onChange={this.handleChange}/>
+                        <div style={{color:'white',fontSize:'15px'}}>{this.state.keyword}</div>
+                    </center>
+                    <hr/>
+                </header>
+            </Fragment>
+        )
+    }
+}
+
+export default Header;
+
+/*
+const Header = () => {
+    return(
+        <Fragment>
+            <center>
+                <h1>Edureka</h1>
+            </center>
+            <hr/>
+        </Fragment>
+    )
+}
+*/
+
+/*
+var a = 
+{
+    add:function(a,b){return }
+}
+
+var b = a.add()
+*/
