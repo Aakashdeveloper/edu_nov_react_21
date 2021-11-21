@@ -1,0 +1,12 @@
+.mainDiv{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+    height:300px;
+    width:20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    display:inline-block;
+    box-shadow: 3px 5px 5px gray;
+}
