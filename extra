@@ -276,3 +276,17 @@ match> for params
 (get) quickSearch>    https://developerfunnel.herokuapp.com/booking
 (get) bookingdetails> https://developerfunnel.herokuapp.com/allBooking
 (post)placebooking > 
+
+https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
+
+
+
+///es5
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+//es6
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
