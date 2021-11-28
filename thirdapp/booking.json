@@ -1,0 +1,31 @@
+{
+  "booking": [
+    {
+      "id": 78056,
+      "hotel_name": "JW Marriott Chandigarh",
+      "name": "Aakash",
+      "phone": "765675657",
+      "date": "2021-12-11",
+      "email": "aakash@gmail.com",
+      "cost": "6599"
+    },
+    {
+      "id": 89913,
+      "hotel_name": "DoubleTree by Hilton",
+      "name": "Nikita",
+      "phone": "765675657",
+      "date": "2021-12-17",
+      "email": "nikita@gmail.com",
+      "cost": "2419"
+    },
+    {
+      "id": 4105,
+      "hotel_name": "The Piccadily",
+      "name": "Aakash",
+      "phone": "765675657",
+      "date": "2021-12-08",
+      "email": "aakash@gmail.com",
+      "cost": "5170"
+    }
+  ]
+}
