@@ -4,13 +4,26 @@ import axios from 'axios';
 const url = "https://developerfunnel.herokuapp.com/hotellist"
 
 class CostFilter extends Component {
-   
+    filterCost = (event) => {
+        let tripId =  sessionStorage.getItem('tripid');
+        let cost = (event.target.value).split('-');
+        let lcost = cost[0];
+        let hcost = cost[1];
+        let costUrl;
+        if(event.target.value == ""){
+            costUrl = `${url}/${tripId}`;
+        }else{
+            costUrl = `${url}/${tripId}?hcost=${hcost}&lcost=${lcost}`;
+        }
+        axios.get(costUrl)
+            .then((response) => {this.props.costPerType(response.data)})
+    }
     
     render(){
         return(
             <>
                 <center><h3>Cost Filter</h3></center>
-                <div style={{marginLeft:'12%'}}>
+                <div style={{marginLeft:'12%'}} onChange={this.filterCost}>
                     <label className="radio">
                         <input type="radio" name="room" value=""/>All
                     </label>

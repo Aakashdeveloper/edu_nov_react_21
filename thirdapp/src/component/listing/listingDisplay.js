@@ -43,8 +43,6 @@ const ListingDisplay = (props) => {
                         </div>
                     )
                 })
-                    
-            
             }else{
                 return(
                     <div>

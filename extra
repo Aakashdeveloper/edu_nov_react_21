@@ -295,3 +295,50 @@ var b = `my age is ${a}`
 json-server
 
 npx json-server --watch booking.json --port 7111
+
+HOC>
+High Order Component
+> it is kind of component that return another Component
+
+>https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial
+
+spread operator
+itertate over array
+
+
+///deployment///
+> npm run build
+> push code to Github
+> deploy using heroku (https://dashboard.heroku.com/)
+
+//step to push code in git////
+//first//
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/edunov.git
+git push -u origin master
+
+///any next time you want to push code////
+git add .
+git commit -m "first commit"
+git push
+
+//// Aws Deployment ////
+code Pipeline
+elastic Bean Stalk
+
+https://github.com/Aakashdeveloper/edunov
+
+
+https://www.youtube.com/c/DeveloperFunnel/videos
+
+/////////
+Redux
+> structure
+> state management
+
+Action > All Api call happen in action
+Reducer > Geather the updated state
+Store > Save the save(data)
+View > Display Part

@@ -26,6 +26,15 @@
       "date": "2021-12-08",
       "email": "aakash@gmail.com",
       "cost": "5170"
+    },
+    {
+      "id": 40133,
+      "hotel_name": "Hometel Chandigarh",
+      "name": "Aakash",
+      "phone": "765675657",
+      "date": "2021-12-09",
+      "email": "aakash@gmail.com",
+      "cost": "2419"
     }
   ]
 }
