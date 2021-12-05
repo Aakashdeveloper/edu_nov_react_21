@@ -339,6 +339,35 @@ Redux
 > state management
 
 Action > All Api call happen in action
-Reducer > Geather the updated state
-Store > Save the save(data)
+Reducer > Updated state
+Store > Save the state(data)
 View > Display Part
+
+
+>> Action will return type and payload
+(action/actionFile)
+
+>> store is the smallest file of app and help to connect reducer
+(store/storefile)(line5)
+
+>>> in main reducer we have to declare all reducers
+
+
+npm i apollo-boost apollo-graphql graphql-tag react-apollo
+
+
+npm i redux react-redux
+
+////////////////
+Home > 9 > call action
+actionFile > 2 > return the data
+movieReducer > 5 > pass data to reducer
+storeFile > 5 > reducer pass to store
+index > 9 > store pass to view
+Home >26 > receive the data from store
+
+
+>>>>>>>>>>>><<<<<<<<<<<<<<<<<
+///generate react native ///
+> go inside the folder using cmd / terminal
+> npx create-react-native-app appname
