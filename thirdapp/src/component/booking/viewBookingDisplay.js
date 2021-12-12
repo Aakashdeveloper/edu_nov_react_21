@@ -14,6 +14,8 @@ const BookingDisplay = (props) => {
                         <td>{item.email}</td>
                         <td>Rs. {item.cost}</td>
                         <td>{item.date}</td>
+                        <td>{item.status}</td>
+                        <td>{item.bank}</td>
                     </tr>
                 )
             })
@@ -32,6 +34,8 @@ const BookingDisplay = (props) => {
                         <th>Email</th>
                         <th>Cost</th>
                         <th>Date</th>
+                        <th>Status</th>
+                        <th>Bank</th>
                     </tr>
                 </thead>
                 <tbody>

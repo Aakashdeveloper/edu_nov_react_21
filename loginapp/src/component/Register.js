@@ -1,19 +1,16 @@
 import React,{Component} from 'react';
 
-const url = "http://localhost:7111/booking"
+const url = "https://developerjwt.herokuapp.com/api/auth/register"
 
-class PlaceBooking extends Component {
+class Register extends Component {
     constructor(props) {
         super(props);
 
         this.state={
-            id:Math.floor(Math.random()*100000),
-            hotel_name:this.props.match.params.hotel_name,
             name:'Aakash',
-            phone:'765675657',
-            date:'',
             email:'aakash@gmail.com',
-            cost: sessionStorage.getItem('cost')
+            password:'',
+            phone:'765675657',
         };
     }
 
@@ -32,8 +29,7 @@ class PlaceBooking extends Component {
                 },
                 body: JSON.stringify(this.state)
             })
-            //.then(this.props.history.push('/viewBooking'))
-            .then(console.log('payment'))
+            .then(this.props.history.push('/'))
 
     }
     render(){
@@ -41,28 +37,9 @@ class PlaceBooking extends Component {
             <div className="container">
                 <div className="panel panel-info">
                     <div className="panel-heading">
-                        Place Booking
+                        Register
                     </div>
                     <div className="panel-body">
-                    <form method="POST" action="https://developerpayment.herokuapp.com/paynow">
-                        <div className="row">
-                            
-                            <div className="form-group col-md-6">
-                                <label>Booking Id</label>
-                                <input className="form-control" readOnly name="id"
-                                value={this.state.id}/>
-                            </div>
-                            <div className="form-group col-md-6">
-                                <label>Hotel Name</label>
-                                <input className="form-control" readOnly name="hotel_name"
-                                value={this.state.hotel_name}/>
-                            </div>
-                            <div className="form-group col-md-6">
-                                <label>Cost</label>
-                                <input className="form-control" readOnly name="cost"
-                                value={this.state.cost}/>
-                            </div>
-                        </div>
                         <div className="row">
                             <div className="form-group col-md-6">
                                 <label>Name</label>
@@ -80,16 +57,14 @@ class PlaceBooking extends Component {
                                 value={this.state.email} onChange={this.handleChange}/>
                             </div>
                             <div className="form-group col-md-6">
-                                <label>Date</label>
-                                <input className="form-control" name="date" type="date"
-                                value={this.state.date} onChange={this.handleChange}/>
+                                <label>Password</label>
+                                <input className="form-control" name="password"
+                                value={this.state.password} onChange={this.handleChange}/>
                             </div>
                         </div>
-                        <button className="btn btn-success" onClick={this.handleSubmit}
-                        type="submit">
-                            Place Booking
+                        <button className="btn btn-success" onClick={this.handleSubmit}>
+                           Register
                         </button>
-                    </form>
                         
                     </div>
                 </div>
@@ -98,4 +73,4 @@ class PlaceBooking extends Component {
     }
 }
 
-export default PlaceBooking;
+export default Register;

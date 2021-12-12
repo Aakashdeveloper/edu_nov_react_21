@@ -396,3 +396,45 @@ var two = [1,2,...one,3]
 /******UserInfo*****/
 (GET) => https://developerjwt.herokuapp.com/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+/////generator function
+
+function loop(){
+    for(i=0;i<5;i++){
+        return i
+    }
+}
+loop()
+0
+1
+2
+3
+4
+
+
+function * loop(){
+    for(i=0;i<5;i++){
+        yield i
+    }
+}
+
+var data = loop()
+undefined
+data.next()
+{value: 0, done: false}
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: 3, done: false}
+data.next()
+{value: 4, done: false}
+data.next()
+{value: undefined, done: true}
+data.next()
+{value: undefined, done: true}
+
+
+
+npm i enzyme react-test-renderer 

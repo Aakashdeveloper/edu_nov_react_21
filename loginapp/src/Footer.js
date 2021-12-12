@@ -1,12 +1,11 @@
 import React from 'react';
 
 const Footer = (props) => {
-    console.log(props)
     return(
         <>
             <hr/>
             <center>
-                <h3>&copy; Developers Funnel {props.year} {props.month} </h3>
+                <h3>&copy; Developer Funnel</h3>
             </center>
         </>
     )
